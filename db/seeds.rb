@@ -1,7 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+# db/seeds.rb
+
+# Criando 10 registros de Note
+note_success = true
+10.times do |i|
+  note = Note.create(
+    title: FFaker::NameBR.name,
+    content: FFaker::Lorem.sentence(10)
+  )
+
+  unless note.persisted?
+    note_success = false
+    puts "Falha ao criar nota #{i + 1}. Erros: #{note.errors.full_messages.join(', ')}"
+  end
+end
+
+puts "Notas criadas com sucesso!" if note_success
