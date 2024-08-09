@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :note do
-    title { FFaker::NameBR.name }
-    content { FFaker::Lorem.word }
+    title { FFaker::Lorem.sentence }
+    content { FFaker::Lorem.characters(10) }
   end
 end
