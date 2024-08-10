@@ -1,24 +1,62 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Projeto CRUD Anotações
+## Descrição
 
-Things you may want to cover:
+Este projeto é uma aplicação Rails que permite a criação, leitura, atualização e exclusão de anotações.
 
-* Ruby version
+---
 
-* System dependencies
+## Requisitos
 
-* Configuration
+- Ruby 3.1.0
+- Rails 7.0.8
+- PostgreSQL 12.x
 
-* Database creation
+---
 
-* Database initialization
+## Instalação e Configuração
 
-* How to run the test suite
+1. **Clone o repositório:**
 
-* Services (job queues, cache servers, search engines, etc.)
+    ```
+    git clone https://github.com/GuiMarcelino/Agro.git
+    ```
 
-* Deployment instructions
+2. **Navegue até o diretório do projeto:**
 
-* ...
+    ```
+    cd notes_agro
+    ```
+
+3. **Instale as dependências:**
+
+    ```
+    bundle install
+    ```
+
+4. **Configure o banco de dados:**
+
+    ```
+    rails db:create
+    rails db:migrate
+    ```
+
+5. **Execute o Seed para criar dados iniciais:**
+
+    ```
+    rails db:seed
+    ```
+
+---
+
+## Executando o Projeto
+
+Inicie o servidor Rails:
+
+```
+rails server
+```
+
+Agora você pode acessar o projeto em `http://localhost:3000`
+---
+
