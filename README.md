@@ -25,7 +25,7 @@ Este projeto é uma aplicação Rails que permite a criação, leitura, atualiza
 2. **Navegue até o diretório do projeto:**
 
     ```
-    cd notes_agro
+    cd Agro
     ```
 
 3. **Instale as dependências:**
